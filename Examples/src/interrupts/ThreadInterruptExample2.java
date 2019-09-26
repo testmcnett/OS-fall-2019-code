@@ -1,3 +1,4 @@
+// Note the difference below in the run() method
 package interrupts;
 
 public class ThreadInterruptExample2 implements Runnable {
