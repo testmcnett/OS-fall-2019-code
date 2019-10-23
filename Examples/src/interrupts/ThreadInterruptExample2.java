@@ -8,7 +8,7 @@ public class ThreadInterruptExample2 implements Runnable {
         t1.start();
  
         try {
-            Thread.sleep(5000);
+            Thread.sleep(50000);
             t1.interrupt();
  
         } catch (InterruptedException ex) {

@@ -35,8 +35,15 @@ class WorkerBee implements Runnable{
 
 	@Override
 	public void run() {
-		for(int i = start; i < end; i++)
+		for(int i = start; i < end; i++) {
 			total = total + i;
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		System.out.println("the total was: " + total);
 		officialTotal.setNum(officialTotal.getNum() + total);
 		System.out.println("in thread" + officialTotal);
